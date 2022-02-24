@@ -14,6 +14,7 @@ Suite of power down and cost saving functions for azure.
 
 - Must created managed identity
 - Must give managed identity permissions on resources its going to interact with
+- [Dot Net Core for local dev](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
 
 ## Products
 
@@ -32,6 +33,18 @@ Import-Module Az.Functions
 Get-Command -Module Az.Functions
 Get-AzFunctionApp
 Get-Help  New-AzFunctionApp  
+```
+
+Using core tools to create and run function.
+
+```ps1
+npm install -g azure-functions-core-tool
+mkdir test
+func init
+func new
+func start
+## get the below from output of func start
+http://localhost:7071/api/testtrig?name=griff
 ```
 
 ## Links
