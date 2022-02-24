@@ -1,5 +1,5 @@
 # Input bindings are passed in via param block.
-param($Request, $TriggerMetadata)
+param($Timer)
 
 ## remember to give msi on the function
 ## remember to give msi permissions on the sub
