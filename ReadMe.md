@@ -15,6 +15,8 @@ Suite of power down and cost saving functions for azure.
 - Must created managed identity
 - Must give managed identity permissions on resources its going to interact with
 - [Dot Net Core for local dev](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
+- [Install node](https://nodejs.org/en/download/)
+- Install [microsoft npm extension for vs code](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
 
 ## Products
 
@@ -47,9 +49,21 @@ func start
 http://localhost:7071/api/testtrig?name=griff
 ```
 
+To install storage emulator (once have node and npm installed)
+
+```ps1
+npm install -g azurite
+
+##to run it
+azurite
+```
+
 ## Links
 
 - [Nodist](https://github.com/nullivex/nodist)
+- [Develop timer triggers locally](https://stefanstranger.github.io/2021/01/06/DevelopingTimerTriggeredAzureFunctionsLocally/)
+- [Storage Emulator](https://go.microsoft.com/fwlink/?linkid=717179&clcid=0x409)
+- [Function Unable to Start](https://docs.microsoft.com/en-us/answers/questions/698846/listener-for-azure-function-was-unable-to-start-er.html)
 
 ## Acknowledgements
 
