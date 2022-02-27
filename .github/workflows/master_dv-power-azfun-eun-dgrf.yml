@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Powershell project to Azure Function App - dv-power-azfun-eun-dgrf
+name: Build and deploy Powershell project to Azure Function App - dv-power-azfun-eun-dgrf(staging)
 
 on:
   push:
@@ -26,4 +26,4 @@ jobs:
           app-name: 'dv-power-azfun-eun-dgrf(staging)'
           slot-name: 'staging'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CB840E5647834751940D93C270615838 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_b5420dfcb59a4a97a9e66252ae77bcda }}
