@@ -3,7 +3,7 @@ param($Timer)
 
 ## remember to give msi on the function
 ## remember to give msi permissions on the sub
-# test change
+# test change 2
 
 Write-Host ("Starting function to power down event hub namespaces...")
 
