@@ -19,6 +19,19 @@ jobs:
       - name: 'Checkout GitHub Action'
         uses: actions/checkout@v2
 
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - run: |
+        az webapp list --query "[?state=='Running']"
+
+
       - name: 'Run Azure Functions Action'
         uses: Azure/functions-action@v1
         id: fa
